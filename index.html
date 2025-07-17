@@ -6,20 +6,25 @@
     <title>NGO2 - Home</title>
     <style>
         :root {
-            --primary: #1c1e26;
-            --accent: #4ff7b3;
-            --accent-dark: #059669;
-            --surface: #23253b;
-            --card: #292a3a;
-            --text-main: #ececec;
-            --text-muted: #c5c7d8;
-            --shadow: #16e5b055;
+            --primary: #131313;
+            --accent: #6AE3C1;
+            --accent-dark: #11B58A;
+            --surface: #22242d;
+            --card: #232837;
+            --input-bg: #191a24;
+            --input-border: #434868;
+            --input-focus: #6AE3C1;
+            --text-main: #F5F7FA;
+            --text-muted: #B3BAC6;
+            --shadow: #6AE3C199;
         }
         * { box-sizing: border-box; }
         body {
-            background: linear-gradient(120deg,#2e3054 0,#111320 100%);
-            background-image: url('https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2024/08/28164754/NGO-Full-Form.png'), linear-gradient(120deg,#2e3054 0,#111320 100%);
-            background-blend-mode: overlay;
+            background: linear-gradient(120deg,#20526a 0,#131313 100%);
+            background-image:
+                url('https://currentaffairs.adda247.com/wp-content/uploads/multisite/sites/5/2024/08/28164754/NGO-Full-Form.png'),
+                linear-gradient(120deg,#20526a 0,#131313 100%);
+            background-blend-mode: lighten, normal;
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -30,173 +35,245 @@
         }
         header {
             background: var(--surface);
-            padding: 20px 0 10px 0;
-            box-shadow: 0 2px 18px var(--shadow);
+            padding: 22px 0 14px 0;
+            box-shadow: 0 4px 44px var(--shadow);
             display: flex;
             align-items: center;
-            gap: 18px;
+            gap: 16px;
             position: sticky;
             top: 0;
             z-index: 100;
         }
         .logo2 {
             margin-left: 32px;
-            width: 54px; height: 54px;
-            display: flex;
-            align-items: center; justify-content: center;
-            background: linear-gradient(135deg, var(--accent) 70%, #19284b 100%);
+            width: 56px; height: 56px;
+            display: flex; align-items: center; justify-content: center;
+            background: linear-gradient(135deg, var(--accent) 80%, #232837 100%);
             border-radius: 18px;
             font-weight: 900;
-            font-size: 2rem;
-            color: #181d24;
-            box-shadow: 0 2px 12px var(--accent-dark);
+            font-size: 2.1rem;
+            color: #20231a;
+            box-shadow: 0 2px 14px var(--shadow);
             letter-spacing: -0.04em;
-            border: 3px solid var(--surface);
+            border: 4px solid #232837;
         }
         header h1 {
-            font-size: 2rem;
+            font-size: 2.1rem;
             margin: 0;
-            font-weight: 700;
+            font-weight: 800;
             color: var(--accent);
-            letter-spacing: 0.03em;
+            letter-spacing: 0.04em;
+            text-shadow: 0 2px 7px #10101040;
         }
         nav {
             margin-left: auto; margin-right: 32px;
-            display: flex; gap: 36px;
+            display: flex; gap: 38px;
         }
         nav a {
             color: var(--accent);
             text-decoration: none;
             font-weight: 700;
-            padding: 7px 14px;
-            border-radius: 6px;
-            transition: background 0.18s;
-            font-size: 1.1em;
+            padding: 10px 18px;
+            border-radius: 8px;
+            transition: background 0.22s;
+            font-size: 1.13em;
+            letter-spacing: 0.03em;
+            border: 2px solid transparent;
         }
         nav a:hover, nav a:focus {
             background: var(--accent-dark);
-            color: #fafdff;
+            color: #111e12;
+            border-color: var(--accent);
             outline: none;
         }
+
         .section-card {
             background: var(--card);
-            border-radius: 24px;
-            padding: 36px 18px 36px 18px;
+            border-radius: 26px;
+            padding: 38px 22px 38px 22px;
             max-width: 950px;
-            box-shadow: 0 2px 36px var(--shadow);
-            margin: 46px auto;
+            box-shadow: 0 6px 46px var(--shadow);
+            margin: 50px auto 0 auto;
         }
         .section-title {
             text-align: center;
             color: var(--accent);
-            font-family: inherit;
             letter-spacing: 0.02em;
-            font-size: 2.1em;
-            margin-bottom: 18px;
+            font-size: 2.25em;
+            margin-bottom: 20px;
+            font-weight: 800;
+            font-family: inherit;
+            text-shadow: 0 3px 16px #11B58A22;
         }
         .about2 {
-            font-size: 1.13rem;
+            font-size: 1.16rem;
             max-width: 680px;
             margin: 18px auto 0 auto;
             color: var(--text-muted);
+            line-height: 1.7;
         }
         .banner-img {
             width: 100%;
             max-width: 950px;
-            margin: 42px auto 0 auto;
+            margin: 44px auto 0 auto;
             display: block;
-            border-radius: 22px;
+            border-radius: 25px;
             box-shadow: 0 2px 54px var(--shadow);
             object-fit: cover;
         }
         .gallery-grid2 {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
-            gap: 13px;
-            margin-top: 15px;
+            gap: 14px;
+            margin-top: 16px;
             max-height: 700px;
             overflow-y: auto;
             scrollbar-width: thin;
-            scrollbar-color: var(--accent-dark) #2b3046;
+            scrollbar-color: var(--accent-dark) #232837;
         }
-        .gallery-grid2::-webkit-scrollbar {
-            width: 8px;
-        }
+        .gallery-grid2::-webkit-scrollbar { width: 9px; }
         .gallery-grid2::-webkit-scrollbar-track {
-            background: #23253b;
+            background: #232837;
             border-radius: 8px;
         }
         .gallery-grid2::-webkit-scrollbar-thumb {
             background: var(--accent-dark);
-            border-radius: 8px;
-            border: 2px solid #23253b;
+            border-radius: 9px;
+            border: 2px solid #232837;
         }
         .gallery-grid2 img {
             width: 100%; aspect-ratio: 4/3;
             object-fit: cover;
-            border-radius: 13px;
+            border-radius: 16px;
             cursor: pointer;
-            border: 2px solid #23253b;
-            box-shadow: 0 2px 18px #0008;
-            transition: transform 0.18s, box-shadow 0.2s;
-            background: #101018;
+            border: 2.5px solid #2c3652;
+            box-shadow: 0 3px 22px #000b;
+            transition: transform 0.18s, box-shadow 0.19s;
+            background: #181820;
         }
-        .gallery-grid2 img:hover {
-            transform: scale(1.09) rotate(-2deg);
-            box-shadow: 0 6px 44px var(--accent-dark);
+        .gallery-grid2 img:hover, .gallery-grid2 img:focus {
+            transform: scale(1.11) rotate(-2deg);
+            box-shadow: 0 8px 36px var(--accent-dark);
+            border-color: var(--accent);
             z-index: 2;
+            outline: none;
         }
+
         .events-list2 {
             display: flex;
             flex-direction: column;
-            gap: 32px;
-            max-width: 730px;
+            gap: 36px;
+            max-width: 780px;
             margin: 0 auto;
         }
         .event-card2 {
-            background: #23253b;
-            border-radius: 18px;
-            box-shadow: 0 2px 18px var(--shadow);
+            background: #232837ee;
+            border-radius: 19px;
+            box-shadow: 0 2px 24px var(--shadow);
             overflow: hidden;
             padding-bottom: 8px;
+            transition: transform 0.15s, box-shadow 0.23s;
+        }
+        .event-card2:hover {
+            transform: translateY(-5px) scale(1.01);
+            box-shadow: 0 12px 60px var(--accent-dark);
         }
         .event-image2 {
             width: 100%;
-            height: 220px;
+            height: 225px;
             object-fit: cover;
-            background: #181d24;
+            background: #1b2626;
             border-bottom: 3px solid var(--accent-dark);
+            filter: brightness(0.97) contrast(1.13);
+            transition: filter 0.19s;
+        }
+        .event-card2:hover .event-image2 {
+            filter: brightness(1.1) saturate(1.05);
         }
         .event-card2-content {
-            padding: 20px 16px 6px 16px;
+            padding: 22px 17px 10px 17px;
         }
         .event-date2 {
             font-weight: 700;
             color: var(--accent);
-            font-size: 1.09em;
+            font-size: 1.13em;
             margin-bottom: 3px;
+            letter-spacing: 0.02em;
         }
         .event-title2 {
-            font-size: 1.18rem;
+            font-size: 1.23rem;
             font-weight: 700;
-            margin-bottom: 7px;
+            margin-bottom: 9px;
             color: #fff;
         }
         .event-desc2 {
-            color: #b8f5e8;
-            font-size: 1.01rem;
+            color: #bafee2;
+            font-size: 1.06rem;
+            line-height: 1.7;
         }
-        #contact2 { background: #19213b; }
+
+        /* Modern fields styling */
+        input[type="email"], input[type="text"], textarea {
+            width: 100%;
+            padding: 13px 18px;
+            background: var(--input-bg);
+            border: 2px solid var(--input-border);
+            border-radius: 10px;
+            color: var(--text-main);
+            font-size: 1.09rem;
+            margin-bottom: 18px;
+            transition: border 0.2s, background 0.18s;
+            box-shadow: 0 2px 16px #11B58A22;
+        }
+        input[type="email"]:focus, input[type="text"]:focus, textarea:focus {
+            border-color: var(--input-focus);
+            background: #1c252d;
+            outline: none;
+            box-shadow: 0 0 8px var(--accent-dark);
+        }
+        .newsletter2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 380px;
+            margin: 22px auto 0 auto;
+        }
+        .newsletter2 label {
+            color: var(--accent);
+            margin-bottom: 6px;
+            font-weight: 700;
+            font-size: 1.05em;
+            align-self: flex-start;
+        }
+        .newsletter2 button {
+            background: var(--accent);
+            color: #181d24;
+            border: none;
+            font-weight:700;
+            border-radius: 10px;
+            padding: 12px 28px;
+            font-size: 1.08rem;
+            cursor: pointer;
+            transition: background .19s, color .19s;
+            box-shadow: 0 2px 16px #11B58A22;
+        }
+        .newsletter2 button:hover {
+            background: var(--accent-dark);
+            color: #fff;
+        }
+        #contact2 { background: #222d39ee; }
         .contact2-content {
             text-align: center;
-            font-size: 1.14rem;
+            font-size: 1.15rem;
             color: var(--text-muted);
-            margin-top: 11px;
+            margin-top: 10px;
         }
         .contact2-content a {
             color: var(--accent);
             font-weight: bold;
+            transition: color .18s;
         }
+        .contact2-content a:hover { color: var(--accent-dark); }
         .contact2-icons {
             font-size: 2.1rem;
             color: var(--accent);
@@ -204,46 +281,23 @@
         }
         footer {
             margin-top: 36px;
-            background: linear-gradient(90deg,#2dbeb3 80%, #1f243b 100%);
+            background: linear-gradient(90deg,#11B58A 70%, #292837 100%);
             color: #fff;
             border-radius: 18px 18px 0 0;
             text-align: center;
             font-size: 1rem;
-            padding: 28px 8px 16px 8px;
+            padding: 36px 8px 22px 8px;
         }
         .social-icons2 a {
-            font-size: 1.5em;
-            margin: 0 9px;
-            color: #c8fff4;
+            font-size: 1.6em;
+            margin: 0 17px;
+            color: #f0fff7;
             text-decoration: none;
-            transition: color .2s;
+            transition: color .19s;
+            vertical-align: middle;
         }
         .social-icons2 a:hover {
-            color: #fded61;
-        }
-        .newsletter2 input[type="email"] {
-            padding: 7px 13px;
-            border-radius: 6px;
-            border: none;
-            font-size: 1rem;
-            margin-right: 7px;
-            outline: none;
-            background: #23253b; color: #eee;
-        }
-        .newsletter2 button {
-            background: var(--accent);
-            color: #172442;
-            border: none;
-            font-weight:700;
-            border-radius: 6px;
-            padding: 7px 17px;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background .2s, color .2s;
-        }
-        .newsletter2 button:hover {
-            background: #23253b;
-            color: var(--accent);
+            color: #ecfd83;
         }
         @media (max-width:700px) {
             header {
@@ -251,13 +305,15 @@
             }
             .logo2 { margin-left: 18px; }
             nav { margin-left: 18px; margin-right: 0; gap: 6px;}
-            .section-card { padding: 26px 5vw; }
+            .section-card { padding: 24px 4vw; }
             .banner-img { border-radius: 0; }
-            .event-image2 { height: 150px; }
-            .gallery-grid2 { max-height: 450px; }
+            .event-image2 { height: 140px; }
+            .gallery-grid2 { max-height: 410px; }
+            .newsletter2 { max-width: unset; }
         }
-        @media (max-width:450px) {
-            .about2, .section-card, #contact2 { font-size: .98rem;}
+        @media (max-width:480px) {
+            .about2, .section-card, #contact2 { font-size: .99rem; }
+            .newsletter2 button { padding: 9px 18px; font-size: 1em; }
         }
         .modal2 {
             display: none; position: fixed; left:0; top:0; right:0; bottom:0;
@@ -267,24 +323,24 @@
         }
         .modal2.open { display: flex; }
         .modal2-content {
-            background: #23253b; padding: 0; border-radius: 16px; 
+            background: #232837; padding: 0; border-radius: 20px; 
             box-shadow: 0 16px 60px var(--accent-dark);
             max-width: 96vw; max-height: 94vh;
             display: flex; flex-direction: column;
         }
         .modal2-content img {
             max-width: 85vw; max-height: 80vh;
-            border-radius: 13px 13px 0 0;
+            border-radius: 17px 17px 0 0;
             display: block;
         }
         .modal2-close {
             background: var(--accent);
             color: #181d24; border: none;
-            font-size: 2rem; font-weight: bold;
-            border-radius: 8px; align-self: flex-end;
+            font-size: 2.1rem; font-weight: bold;
+            border-radius: 9px; align-self: flex-end;
             margin: 7px 15px 0 0; cursor: pointer;
-            padding: 0 10px; height: 36px; line-height: 34px;
-            transition: background .2s;
+            padding: 0 10px; height: 40px; line-height: 38px;
+            transition: background .18s;
         }
         .modal2-close:hover { background: var(--accent-dark);}
     </style>
@@ -386,6 +442,11 @@
                 <strong>Email:</strong> <a href="mailto:hello@ngo2.org">hello@ngo2.org</a>
             </p>
         </div>
+        <form class="newsletter2" aria-label="Newsletter signup">
+            <label for="newsletter-email">Subscribe for updates</label>
+            <input type="email" id="newsletter-email" placeholder="Your Email Address" required>
+            <button type="submit">Subscribe</button>
+        </form>
     </section>
 
     <footer>
@@ -394,11 +455,7 @@
             <a href="#" title="Twitter">&#x1F426;</a>
             <a href="#" title="Instagram">&#x1F426;</a>
         </div>
-        <form class="newsletter2" aria-label="Newsletter signup">
-            <input type="email" placeholder="Subscribe for updates" required>
-            <button type="submit">Subscribe</button>
-        </form>
-        <p style="margin-top:14px;font-size:.98em;">&copy; 2025 NGO2 Foundation. All rights reserved.</p>
+        <p style="margin-top:18px;font-size:1em;">&copy; 2025 NGO2 Foundation. All rights reserved.</p>
     </footer>
 
     <!-- Modal for Gallery -->
